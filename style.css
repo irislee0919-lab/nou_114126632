@@ -1,12 +1,25 @@
+/* 讓所有 class 為 highlight 的元素文字變紅色 */
 .highlight {
-  color: red; /* 讓所有 class 為 highlight 的文字都變紅色 */
+  color: red;
 }
-h2{color: rgb(0, 38, 255);/*讓所有 class 為 highlight 的文字都變紅色 */
 
-h3{color: rgb(0, 255, 0);/*讓所有 class 為 highlight 的文字都變紅色 */
+/* 讓所有 <h2> 標題文字變為藍色 */
+h2 {
+  color: rgb(0, 38, 255);
+}
 
+/* 讓所有 <h3> 標題文字變為綠色 */
+h3 {
+  color: rgb(0, 255, 0);
+}
+
+/* 只有 id 為 main-header 的標頭：藍色背景、白色文字 */
 #main-header {
-  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
-color: rgb(255, 255, 255);
-main-header {
-  background-color: blue; /* 只有這個唯一的標頭會變藍色背景 */
+  background-color: blue;
+  color: rgb(255, 255, 255);
+}
+
+#main-header h1 {
+  background-color: yellow; /* 加上黃色背景 */
+  color: black; /* 建議將文字顏色設為黑色，避免黃底配白字看不清楚 */
+}
